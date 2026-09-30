@@ -18,9 +18,13 @@ body { background: var(--bg); color: var(--ink); font-family: Georgia, "Times Ne
 a { color: var(--gold); }
 
 header.top { border-bottom: 1px solid var(--gold); padding: 14px 0; }
-header.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+html, body { overflow-x: hidden; }
+img { max-width: 100%; }
+header.top .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 12px; }
+.who figure { min-width: 0; }
+h1, h2, p, li { overflow-wrap: anywhere; }
 .brand { font: 700 12px Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
-.logo-ph { font: 11px Arial, sans-serif; color: #8a6a22; border: 1px dashed var(--gold); padding: 6px 10px; white-space: nowrap; }
+.logo-ph { font: 11px Arial, sans-serif; color: #8a6a22; border: 1px dashed var(--gold); padding: 6px 10px; }
 
 .hero { padding: 28px 0 8px; }
 .kicker { font: 700 12px Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin: 0 0 10px; }
